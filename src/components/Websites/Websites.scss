@@ -1,0 +1,17 @@
+.Websites {
+  color: #777;
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 5vw;
+  .url {
+    margin: 0 1.2vw;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+      color: #555;
+    }
+  }
+}
