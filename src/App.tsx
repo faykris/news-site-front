@@ -61,14 +61,14 @@ const App: React.FC = () => {
         <p>
           Regístrate en Oil Profit y recibe 20% en bonificación sobre tu primera inversión.
         </p>
-        <button type='button'>
+        <button type='button' onClick={closePromo}>
           Regístrate Ahora
         </button>
       </div>
       <div className="viewers">
         <p>15 personas están viendo esto <FontAwesomeIcon icon={faEye} /></p>
       </div>
-      
+ 
     </div>
   );
 }
