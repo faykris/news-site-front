@@ -4,7 +4,7 @@ import Websites from './components/Websites/Websites';
 import Header from './components/Header/Header';
 import Article from './components/Article/Article';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const App: React.FC = () => {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -65,6 +65,10 @@ const App: React.FC = () => {
           Regístrate Ahora
         </button>
       </div>
+      <div className="viewers">
+        <p>15 personas están viendo esto <FontAwesomeIcon icon={faEye} /></p>
+      </div>
+
     </div>
   );
 }

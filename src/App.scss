@@ -1,3 +1,44 @@
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+.earnings {
+  padding: .5rem;
+  position: fixed;
+  display: flex;
+  top: 1rem;
+  width: 15rem;
+  height: 10rem;
+  right: -20rem;
+  background-color: rgba(112, 112, 112, 0.5);
+  flex-wrap: wrap;
+  z-index: 1002;
+  animation: viewers 5s ease-in-out 10s infinite;
+  .imgface {
+    width: 33.33%;
+    
+  }
+  .textface {
+    width: 66.66%;
+  }
+}
+
+.viewers {
+  position: fixed;
+  display: flex;
+  top: 1rem;
+  right: -20rem;
+  background-color: rgba(0, 0, 0, .9);
+  opacity: .9;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  z-index: 1001;
+  align-items: center;
+  animation: viewers 5s ease-in-out 1s;
+}
+
 .promo {
   position: fixed;
   display: flex;
@@ -97,6 +138,24 @@
   }
 }
 
+@keyframes viewers {
+  0% {
+    position: fixed;
+    transform: translatex(0);
+  }
+
+  10% {
+    transform: translatex(-22rem);
+  }
+
+  90% {
+    transform: translatex(-22rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 @keyframes invert {
   0% {
