@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <p>@trecenoticiascr</p>
       </div>
       <div className='element'>
-        <img src="	https://alphatrader.best/landers/natdiaz_1718885579/img/logo.png" alt="Logo" />
+        <img src="https://alphatrader.best/landers/natdiaz_1718885579/img/logo.png" alt="Logo" />
       </div>
       <div className='element'>
         <p>De Lunes a Domingo</p>

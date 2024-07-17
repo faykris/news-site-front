@@ -1,38 +1,133 @@
-// .App {
-//   text-align: center;
-// }
+.promo {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  min-height: 6rem;
+  background-color: white;
+  border-top: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  animation: invert 1.5s ease-in-out;
+  .close {
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
+  }
+  p {
+    width: 50%;
+    font-weight: 300;
+  }
+  button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #ed1c24;
+  }
+}
 
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
+.top-component {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
 
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
+.hidden {
+  display: none;
+}
 
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
+.header {
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
 
-// .App-link {
-//   color: #61dafb;
-// }
+.fixed {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para diferenciarlo mejor */
+}
 
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+.add-margin {
+  transition: all 0.3s ease-in-out;
+  margin-top: 12.5rem;
+}
+
+.remove-margin {
+  transition: all 0.3s ease-in-out;
+  margin-top: 0;
+}
+
+.hide {
+  opacity: 0;
+  animation: hide 1.5s ease-out 1;
+}
+
+
+.contain {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  min-height: 6rem;
+  background-color: white;
+  border-top: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  .close {
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
+  }
+  p {
+    width: 50%;
+    font-weight: 300;
+  }
+  button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #ed1c24;
+  }
+}
+
+
+@keyframes invert {
+  0% {
+    background-color: black;
+    color: white;
+  }
+
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    min-height: 6rem;
+    background-color: white;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20rem);
+    display: none;
+  }
+}

@@ -350,15 +350,12 @@ const Article: React.FC = () => {
           <h2>Inscripción gratuita</h2>
         </div>
         <div className="body">
-          <input placeholder='Nombre' className='input' type='text' {...register("firstName")} />
-          <input placeholder='Apellido' className='input' type='text' {...register("lastName")} />
-          <input placeholder='Correo' className='input' type='text' {...register("lastName")} />
-          <input placeholder='Número de teléfono' className='input' maxLength={15} type='text' {...register("phone")} />
+          <input placeholder='Nombre' className='input' type='text' {...register("firstName")} required />
+          <input placeholder='Apellido' className='input' type='text' {...register("lastName")} required />
+          <input placeholder='Correo' className='input' type='text' {...register("email")} required />
+          <input placeholder='Número de teléfono' className='input' maxLength={15} type='text' {...register("phone")} required />
           <button className='register'
-            type="button"
-            onClick={() => {
-              setValue("lastName", "luo") // ✅
-            }}
+            type="submit"
           >
             Regístrese Ahora
           </button>
