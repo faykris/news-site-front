@@ -190,3 +190,20 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 680px) {
+  .promo {
+    padding: .5rem 1rem;
+    gap: .5rem;
+    height: 8rem;
+    p {
+      width: 60%;
+    }
+    .close {
+      cursor: pointer;
+      position: absolute;
+      right: .7rem;
+      top: .7rem;
+    }
+  }
+}

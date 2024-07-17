@@ -68,7 +68,7 @@ const App: React.FC = () => {
       <div className="viewers">
         <p>15 personas están viendo esto <FontAwesomeIcon icon={faEye} /></p>
       </div>
-
+      
     </div>
   );
 }
